@@ -6,7 +6,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ZEROVEX TECHNOLOGIES</title>
+<title>ZEROVEX TECHNOLOGIES | 3D Printing & Rapid Prototyping Services India</title>
+
+<meta name="description"
+content="ZEROVEX Technologies provides professional 3D printing,
+rapid prototyping,
+engineering design and CNC programming services across India.">
+
+<meta name="keywords" content="3D printing India,
+3D printing Bangalore,
+3D printing Coimbatore,
+rapid prototyping India,
+CNC programming India,
+engineering design services India">
+
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="ZEROVEX Technologies">
+
 
 <style>
 
@@ -160,6 +177,44 @@ height:60px;
 width:100%;
 }
 
+.whatsapp img{
+width:100%;
+}
+
+/* MOBILE MENU */
+
+.menu-toggle{
+display:none;
+font-size:30px;
+cursor:pointer;
+}
+
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+flex-direction:column;
+width:100%;
+text-align:center;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+nav.show{
+display:flex;
+}
+
+}
+
+</style>
+
 </style>
 
 </head>
@@ -170,6 +225,9 @@ width:100%;
 <header>
 
 <img src="logo.png" class="logo">
+
+<div class="menu-toggle"
+onclick="toggleMenu()">☰</div>
 
 <nav>
 
@@ -273,10 +331,18 @@ We transform ideas into real engineering products.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 
+
 </a>
+
+<script>
+
+function toggleMenu(){
+document.querySelector("nav").classList.toggle("show");
+}
+
+</script>
 
 
 </body>
 
 </html>
-
