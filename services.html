@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ZEROVEX Technologies</title>
+    <meta name="title" content="ZEROVEX Technologies | 3D Printing & Engineering Services">
+    <meta name="description" content="Top-rated 3D printing, rapid prototyping, and CAD/CAM engineering services in Coimbatore. Founded by aerospace engineers. Get an instant quote today!">
+    <meta name="keywords" content="3D printing Coimbatore, rapid prototyping, CAD design, CAM programming, FDM, SLA, SLS, Zerovex Technologies, 3D printing India, engineering design">
+    <meta name="author" content="ZEROVEX Technologies">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" type="image/png" href="logo-2.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zerovex.in/">
+    <meta property="og:title" content="ZEROVEX Technologies | 3D Printing Experts">
+    <meta property="og:description" content="Advanced 3D printing and rapid prototyping services. Turn your ideas into reality.">
+    <meta property="og:image" content="logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; overflow-x: hidden; }
+        .glass-effect { background: rgba(255, 255, 255, 0.98); border-bottom: 1px solid #f3f4f6; }
+        
+        .nav-link { position: relative; color: #6b7280; padding-bottom: 4px; transition: color 0.3s ease; }
+        .nav-link:hover { color: #00c853; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px;
+            bottom: 0; left: 0; background-color: #00c853; transform-origin: bottom right; transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
+        /* Step Card CSS for Home/Services */
+        .step-card .step-number { transition: all 0.3s ease; opacity: 0.1; }
+        .step-card:hover .step-number { opacity: 0.8; color: #00c853; transform: translateY(-5px) scale(1.05); }
+
+        /* Service Image Zoom Effect */
+        .service-image-wrapper { position: relative; overflow: hidden; border-radius: 1rem; }
+        .service-image-wrapper img { transition: transform 0.5s ease; }
+        .service-image-wrapper:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="text-gray-800 relative">
+
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html"><img class="h-10 w-auto" src="logo.png" alt="ZEROVEX Logo"></a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="index.html" class="nav-link font-medium text-sm">Home</a>
+                    <a href="services.html" class="nav-link font-medium text-sm text-[#00c853]">Services</a>
+                    <a href="contact.html" class="nav-link font-medium text-sm">Contact</a>
+                    <a href="index.html#enquiry" class="nav-link font-medium text-sm">Client Enquiry</a>
+                    <a href="index.html#about" class="nav-link font-medium text-sm">About</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-5">
+                    <a href="quote.html" class="bg-[#00c853] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#059669] transition-colors flex items-center gap-2 text-sm shadow-md">
+                        <i class="fa-solid fa-cloud-arrow-up text-base"></i> Upload File - Get Instant Price
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-36 pb-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
+            <span class="text-[#00c853] font-semibold tracking-wider uppercase text-sm mb-2 block">What We Offer</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                Our <span class="text-[#00c853]">Services</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                From concept to final production, we offer comprehensive solutions to bring your ideas to life using cutting-edge technology.
+            </p>
+        </div>
+    </div>
+
+    <div class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="3d-printing">
+            <div class="service-image-wrapper order-2 lg:order-1 shadow-lg" data-aos="fade-right">
+                <img src="https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/default-album/a-complex-hp-mjf-3d-printed-part.jpg?sfvrsn=ed324411_0" alt="3D Printing" class="w-full h-[400px] object-cover">
+            </div>
+            <div class="order-1 lg:order-2" data-aos="fade-left">
+                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-6">
+                    <i class="fa-solid fa-cube text-xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">3D Printing Solutions</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    We provide top-tier FDM, SLA, and SLS 3D printing services tailored for precision, strength, and durability. Whether you need a single prototype or small-batch manufacturing, we ensure the highest quality surface finish and dimensional accuracy.
+                </p>
+                <ul class="space-y-3 mb-8 text-sm text-gray-700">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> <strong>Materials:</strong> PLA, ABS, PETG, TPU, and more.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> High dimensional accuracy & fine layer resolution.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Affordable pricing based on exact material weight.</li>
+                </ul>
+                <a href="quote.html" class="inline-flex items-center gap-2 bg-[#00c853] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#059669] transition-all shadow-md group text-sm">
+                    Upload STL for Pricing <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="rapid-prototyping">
+            <div data-aos="fade-right">
+                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-6">
+                    <i class="fa-solid fa-rocket text-xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Rapid Prototyping</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Accelerate your product development cycle. We help engineers, inventors, and businesses quickly turn digital concepts into physical, testable models. Test form, fit, and function before committing to expensive tooling.
+                </p>
+                <ul class="space-y-3 mb-8 text-sm text-gray-700">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Iterate designs faster and reduce time-to-market.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Functional testing with engineering-grade materials.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Proof of concept models for presentations and pitches.</li>
+                </ul>
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-white border-2 border-[#00c853] text-[#00c853] px-6 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-all text-sm group">
+                    Discuss Your Project <i class="fa-solid fa-comment-dots group-hover:scale-110 transition-transform"></i>
+                </a>
+            </div>
+            <div class="service-image-wrapper shadow-lg" data-aos="fade-left">
+                <img src="https://www.taito3d.co.za/blogs/images/car-parts/tab-car-1.jpg" alt="Rapid Prototyping" class="w-full h-[400px] object-cover">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="engineering-design">
+            <div class="service-image-wrapper order-2 lg:order-1 shadow-lg" data-aos="fade-right">
+                <img src="https://real-engineering-solutions.com/wp-content/uploads/2024/08/solidworks-photo.webp" alt="Engineering Design" class="w-full h-[400px] object-cover">
+            </div>
+            <div class="order-1 lg:order-2" data-aos="fade-left">
+                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-6">
+                    <i class="fa-solid fa-compass text-xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Engineering CAD Design</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Have an idea but no 3D file? Our aerospace engineers provide expert CAD modeling services. From rough sketches and reverse engineering to complex mechanical assemblies, we design parts optimized for manufacturing.
+                </p>
+                <ul class="space-y-3 mb-8 text-sm text-gray-700">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Conceptual 3D Modeling (SolidWorks, CATIA, Fusion360).</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Design for Additive Manufacturing (DFAM).</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Reverse Engineering of existing physical parts.</li>
+                </ul>
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-[#00c853] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#059669] transition-all shadow-md group text-sm">
+                    Request Design Service <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="cam-programming">
+            <div data-aos="fade-right">
+                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-6">
+                    <i class="fa-solid fa-microchip text-xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">CAM Programming</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Maximize your machine's efficiency with our expert Computer-Aided Manufacturing (CAM) programming services. We create optimized toolpaths that reduce machining time, extend tool life, and ensure flawless surface finishes.
+                </p>
+                <ul class="space-y-3 mb-8 text-sm text-gray-700">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> 3-Axis to 5-Axis Milling & Turning programming.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> G-Code generation customized for your specific machine controllers.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Collision detection and machining simulation.</li>
+                </ul>
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-white border-2 border-[#00c853] text-[#00c853] px-6 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-all text-sm group">
+                    Contact for CAM <i class="fa-solid fa-comment-dots group-hover:scale-110 transition-transform"></i>
+                </a>
+            </div>
+            <div class="service-image-wrapper shadow-lg" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1713371398484-cc4e4f6a262a?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="CAM Programming" class="w-full h-[400px] object-cover">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-[#00c853] py-16 mt-10">
+        <div class="max-w-4xl mx-auto px-4 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to start your next project?</h2>
+            <p class="text-emerald-50 mb-8">Upload your 3D models today to get an instant estimate, or contact our engineering team to discuss custom requirements.</p>
+            <div class="flex justify-center gap-4">
+                <a href="quote.html" class="bg-white text-[#00c853] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                    Get Instant Quote
+                </a>
+                <a href="contact.html" class="bg-transparent border border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#00c853] transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <img class="h-8 w-auto opacity-90" src="logo.png" alt="ZEROVEX Logo">
+            <div class="text-sm text-gray-500 font-medium">
+                &copy; 2026 ZEROVEX Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 50
+            });
+        });
+    </script>
+
+</body>
+</html>

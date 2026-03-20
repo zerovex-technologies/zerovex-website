@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ZEROVEX Technologies</title>
+    <meta name="title" content="ZEROVEX Technologies | 3D Printing & Engineering Services">
+    <meta name="description" content="Top-rated 3D printing, rapid prototyping, and CAD/CAM engineering services in Coimbatore. Founded by aerospace engineers. Get an instant quote today!">
+    <meta name="keywords" content="3D printing Coimbatore, rapid prototyping, CAD design, CAM programming, FDM, SLA, SLS, Zerovex Technologies, 3D printing India, engineering design">
+    <meta name="author" content="ZEROVEX Technologies">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" type="image/png" href="logo-2.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zerovex.in/">
+    <meta property="og:title" content="ZEROVEX Technologies | 3D Printing Experts">
+    <meta property="og:description" content="Advanced 3D printing and rapid prototyping services. Turn your ideas into reality.">
+    <meta property="og:image" content="logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; overflow-x: hidden; }
+        .glass-effect { background: rgba(255, 255, 255, 0.98); border-bottom: 1px solid #f3f4f6; }
+        
+        .nav-link { position: relative; color: #6b7280; padding-bottom: 4px; transition: color 0.3s ease; }
+        .nav-link:hover { color: #00c853; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px;
+            bottom: 0; left: 0; background-color: #00c853; transform-origin: bottom right; transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
+        /* Step Card CSS for Home/Services */
+        .step-card .step-number { transition: all 0.3s ease; opacity: 0.1; }
+        .step-card:hover .step-number { opacity: 0.8; color: #00c853; transform: translateY(-5px) scale(1.05); }
+
+        /* Service Image Zoom Effect */
+        .service-image-wrapper { position: relative; overflow: hidden; border-radius: 1rem; }
+        .service-image-wrapper img { transition: transform 0.5s ease; }
+        .service-image-wrapper:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html"><img class="h-10 w-auto" src="logo.png" alt="ZEROVEX Logo"></a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="index.html" class="nav-link font-medium text-sm">Home</a>
+                    <a href="index.html#services" class="nav-link font-medium text-sm">Services</a>
+                    <a href="index.html#about" class="nav-link font-medium text-sm">About</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-5">
+                    <a href="index.html" class="text-gray-500 hover:text-[#00c853] transition-colors text-sm font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
+                    <a href="contact.html" class="bg-[#00c853] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#059669] transition-colors flex items-center gap-2 text-sm shadow-md">
+                        <i class="fa-solid fa-headset text-base"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-10" data-aos="fade-down">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                Get an <span class="text-[#00c853]">Instant</span> Quote
+            </h1>
+            <p class="text-gray-500 text-sm">Upload your 3D design file. Our system supports STL, STEP, and IGES formats.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-6" data-aos="fade-right" data-aos-delay="100">
+                
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)]">
+                    <h2 class="text-lg font-bold text-gray-900 mb-5 border-b border-gray-100 pb-3">1. Upload 3D Model</h2>
+                    
+                    <div class="upload-zone rounded-xl p-8 text-center cursor-pointer bg-gray-50 relative" id="drop-zone">
+                        <input type="file" id="file-upload" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" accept=".stl,.step,.iges">
+                        <div class="flex flex-col items-center pointer-events-none">
+                            <i class="fa-solid fa-cube text-4xl text-[#00c853] mb-3" id="upload-icon"></i>
+                            <span class="text-sm font-bold text-gray-700" id="file-name-display">Click to upload or drag & drop</span>
+                            <span class="text-xs text-gray-400 mt-1">Supported formats: .STL, .STEP, .IGES (Max 50MB)</span>
+                            
+                            <span class="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded mt-2.5 border border-emerald-100">
+                                * Estimated price is only supported for .STL files
+                            </span>
+
+                            <span class="text-xs font-semibold text-gray-500 mt-4 bg-gray-200 px-3 py-1 rounded-full" id="upload-status">Waiting for file...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)]">
+                    <h2 class="text-lg font-bold text-gray-900 mb-5 border-b border-gray-100 pb-3">2. Project Details</h2>
+                    
+                    <form id="quote-form" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Material Selection</label>
+                                <select id="material-select" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white cursor-pointer" required>
+                                    <option value="PLA" data-density="1.24">PLA (Standard & Strong)</option>
+                                    <option value="ABS" data-density="1.04">ABS (Impact Resistant)</option>
+                                    <option value="PETG" data-density="1.27">PETG (Durable & Flexible)</option>
+                                    <option value="TPU" data-density="1.21">TPU (Flexible Rubber-like)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Email ID</label>
+                                <input type="email" id="customer-email" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="yourname@email.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Your Name</label>
+                                <input type="text" id="customer-name" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Mobile Number</label>
+                                <input type="tel" id="customer-mobile" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1.5">Additional Requirements (Optional)</label>
+                            <textarea id="customer-req" rows="2" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm resize-none bg-gray-50 focus:bg-white" placeholder="Specific color, infill percentage (default 20%), layer height, etc."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-1" data-aos="fade-left" data-aos-delay="300">
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] sticky top-28">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 border-b border-gray-100 pb-4">Estimated Quote</h3>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">Material:</span>
+                            <span class="font-semibold text-gray-800" id="summary-material">PLA</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">Estimated Weight:</span>
+                            <span class="font-semibold text-[#00c853] bg-emerald-50 px-2 py-1 rounded border border-emerald-100" id="summary-weight">0.0 g</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-5 mb-6 bg-gray-50 -mx-6 px-6 pb-6">
+                        <div class="flex justify-between items-end mb-3 pt-2">
+                            <span class="text-base font-bold text-gray-900">Total Price</span>
+                            <span class="text-3xl font-black text-[#00c853] transition-all" id="total-price">₹0</span>
+                        </div>
+                        
+                        <p class="text-xs text-gray-500 leading-relaxed mt-3" id="price-disclaimer">
+                            * This is an approximate cost based on volume and 30% average density (walls + infill). Final quote may vary slightly based on manual slicing and support materials.
+                        </p>
+                    </div>
+
+                    <button id="submit-btn" class="w-full bg-[#00c853] text-white font-bold py-3.5 rounded-lg hover:bg-[#059669] transition-all duration-300 shadow-md text-sm flex items-center justify-center gap-2 group disabled:bg-gray-400 disabled:cursor-not-allowed">
+                        <span id="btn-text">Submit Order</span> 
+                        <i id="btn-icon" class="fa-solid fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
+                        <div id="btn-spinner" class="spinner hidden"></div>
+                    </button>
+
+                    <div id="form-message" class="hidden mt-4 text-center text-sm font-semibold rounded-lg py-2 px-3">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="https://wa.me/918248103727" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-300 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-white border-t border-gray-200 py-6 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <img class="h-6 w-auto opacity-70" src="logo.png" alt="ZEROVEX Logo">
+            <div class="text-xs text-gray-500 font-medium">
+                &copy; 2026 ZEROVEX Technologies.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/STLLoader.js"></script>
+
+    <script>
+        // Initialize Animations
+        AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
+
+        // Google Apps Script URL (from your screenshot)
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwV7FhHycIMwTP5pH407T0d2UiET8pswpwqNfXZ2m92OzgiNoaDEWM0ES6JXS3HiFVBzQ/exec';
+
+        // Constants
+        const RATE_PER_GRAM = 15; 
+        const INFILL_FACTOR = 0.35; 
+
+        // Global variables
+        window.currentVolumeCM3 = 0;
+        window.currentFileType = '';
+        window.fileBase64 = null;
+        window.fileNameData = null;
+        window.fileMimeType = null;
+
+        // Elements
+        const fileUpload = document.getElementById('file-upload');
+        const fileNameDisplay = document.getElementById('file-name-display');
+        const uploadStatus = document.getElementById('upload-status');
+        const materialSelect = document.getElementById('material-select');
+        const summaryMaterial = document.getElementById('summary-material');
+        const summaryWeight = document.getElementById('summary-weight');
+        const totalPriceDisplay = document.getElementById('total-price');
+        const priceDisclaimer = document.getElementById('price-disclaimer');
+        
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnIcon = document.getElementById('btn-icon');
+        const btnSpinner = document.getElementById('btn-spinner');
+        const formMessage = document.getElementById('form-message');
+
+        // Material Change
+        materialSelect.addEventListener('change', function() {
+            summaryMaterial.innerText = this.value;
+            if(window.currentFileType === 'stl') {
+                calculateAndDisplayPrice();
+            }
+        });
+
+        // File Upload Handling
+        fileUpload.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if(!file) return;
+
+            const fileName = file.name.toLowerCase();
+            const extension = fileName.split('.').pop();
+            window.currentFileType = extension;
+            window.fileNameData = file.name;
+            window.fileMimeType = file.type || 'application/octet-stream';
+
+            fileNameDisplay.innerText = file.name;
+            fileNameDisplay.classList.add('text-[#00c853]');
+
+            // Read file as Base64 for Google Script
+            const readerBase64 = new FileReader();
+            readerBase64.onload = function(event) {
+                // Remove the data URL prefix (e.g., "data:application/octet-stream;base64,")
+                const base64String = event.target.result.split(',')[1];
+                window.fileBase64 = base64String;
+            };
+            readerBase64.readAsDataURL(file);
+
+            // Handle UI based on file type
+            if(extension === 'stl') {
+                uploadStatus.innerText = "Processing STL to calculate weight...";
+                uploadStatus.className = "text-xs font-semibold text-orange-500 mt-3 bg-orange-50 px-3 py-1 rounded-full border border-orange-200 animate-pulse";
+                
+                totalPriceDisplay.classList.remove('text-xl', 'text-gray-800');
+                totalPriceDisplay.classList.add('text-3xl', 'text-[#00c853]');
+                priceDisclaimer.innerText = "* This is an approximate cost based on volume and 30% average density (walls + infill). Final quote may vary slightly based on manual slicing and support materials.";
+
+                parseSTLAndCalculate(file);
+
+            } else if (extension === 'step' || extension === 'iges') {
+                window.currentVolumeCM3 = 0;
+                uploadStatus.innerText = "File Attached successfully!";
+                uploadStatus.className = "text-xs font-semibold text-blue-500 mt-3 bg-blue-50 px-3 py-1 rounded-full border border-blue-200";
+                
+                summaryWeight.innerText = "Manual Review";
+                totalPriceDisplay.innerText = "Custom Quote";
+                totalPriceDisplay.classList.remove('text-3xl', 'text-[#00c853]');
+                totalPriceDisplay.classList.add('text-xl', 'text-gray-800');
+                
+                priceDisclaimer.innerText = "* STEP and IGES files require manual slicing review by our engineers. Submit your order and we will get back to you with the exact pricing.";
+            } else {
+                uploadStatus.innerText = "Error: Unsupported file format.";
+                uploadStatus.className = "text-xs font-semibold text-red-500 mt-3 bg-red-50 px-3 py-1 rounded-full border border-red-200";
+                window.currentFileType = '';
+                window.fileBase64 = null;
+            }
+        });
+
+        // STL Parsing
+        function parseSTLAndCalculate(file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    const loader = new THREE.STLLoader();
+                    const geometry = loader.parse(event.target.result);
+
+                    let position = geometry.attributes.position;
+                    let faces = position.count / 3;
+                    let sum = 0;
+                    let p1 = new THREE.Vector3(), p2 = new THREE.Vector3(), p3 = new THREE.Vector3();
+                    
+                    for (let i = 0; i < faces; i++) {
+                        p1.fromBufferAttribute(position, i * 3 + 0);
+                        p2.fromBufferAttribute(position, i * 3 + 1);
+                        p3.fromBufferAttribute(position, i * 3 + 2);
+                        sum += p1.dot(p2.cross(p3)) / 6.0;
+                    }
+                    
+                    let volumeMM3 = Math.abs(sum); 
+                    window.currentVolumeCM3 = volumeMM3 / 1000; 
+
+                    uploadStatus.innerText = "Calculation Complete!";
+                    uploadStatus.className = "text-xs font-semibold text-[#00c853] mt-3 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200";
+                    
+                    calculateAndDisplayPrice();
+
+                } catch (err) {
+                    console.error(err);
+                    uploadStatus.innerText = "Error reading STL. File might be corrupted.";
+                    uploadStatus.className = "text-xs font-semibold text-red-500 mt-3 bg-red-50 px-3 py-1 rounded-full border border-red-200";
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        }
+
+        function calculateAndDisplayPrice() {
+            if (window.currentVolumeCM3 === 0) return;
+
+            const density = parseFloat(materialSelect.options[materialSelect.selectedIndex].getAttribute('data-density'));
+            let estimatedWeight = window.currentVolumeCM3 * density * INFILL_FACTOR;
+            
+            if(estimatedWeight > 0 && estimatedWeight < 1) estimatedWeight = 1;
+
+            let total = estimatedWeight * RATE_PER_GRAM;
+
+            summaryWeight.innerText = estimatedWeight.toFixed(1) + ' g';
+            totalPriceDisplay.innerText = '₹' + Math.ceil(total).toLocaleString('en-IN');
+        }
+
+        // --- SUBMIT FORM TO GOOGLE SCRIPT ---
+        submitBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Validate form
+            const name = document.getElementById('customer-name').value;
+            const email = document.getElementById('customer-email').value;
+            const mobile = document.getElementById('customer-mobile').value;
+            const requirements = document.getElementById('customer-req').value;
+            const material = materialSelect.value;
+
+            if(!name || !email || !mobile) {
+                showMessage("Please fill in all required fields (Name, Email, Mobile).", "error");
+                return;
+            }
+
+            if(!window.fileBase64) {
+                showMessage("Please upload a 3D model file first.", "error");
+                return;
+            }
+
+            // Prepare Data Payload
+            const payload = {
+                name: name,
+                email: email,
+                mobile: mobile,
+                material: material,
+                weight: summaryWeight.innerText,
+                price: totalPriceDisplay.innerText,
+                requirements: requirements,
+                fileName: window.fileNameData,
+                mimeType: window.fileMimeType,
+                fileBase64: window.fileBase64
+            };
+
+            // Update UI to loading state
+            submitBtn.disabled = true;
+            btnText.innerText = "Sending...";
+            btnIcon.classList.add('hidden');
+            btnSpinner.classList.remove('hidden');
+            formMessage.classList.add('hidden');
+
+            // Send POST request
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Important for Google Scripts
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(() => {
+                // Success
+                submitBtn.disabled = false;
+                btnText.innerText = "Order Submitted!";
+                btnSpinner.classList.add('hidden');
+                
+                showMessage("Success! Your order has been submitted. We will contact you soon.", "success");
+                
+                // Reset form
+                document.getElementById('quote-form').reset();
+                setTimeout(() => {
+                    btnText.innerText = "Submit Order";
+                    btnIcon.classList.remove('hidden');
+                }, 3000);
+            })
+            .catch(error => {
+                // Error
+                console.error('Error!', error.message);
+                submitBtn.disabled = false;
+                btnText.innerText = "Submit Order";
+                btnIcon.classList.remove('hidden');
+                btnSpinner.classList.add('hidden');
+                
+                showMessage("Something went wrong. Please try again or contact us directly.", "error");
+            });
+        });
+
+        // Helper to show messages
+        function showMessage(text, type) {
+            formMessage.innerText = text;
+            formMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-emerald-100', 'text-emerald-700');
+            
+            if(type === 'error') {
+                formMessage.classList.add('bg-red-100', 'text-red-700');
+            } else {
+                formMessage.classList.add('bg-emerald-100', 'text-emerald-700');
+            }
+        }
+    </script>
+</body>
+</html>

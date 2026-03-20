@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ZEROVEX Technologies</title>
+    <meta name="title" content="ZEROVEX Technologies | 3D Printing & Engineering Services">
+    <meta name="description" content="Top-rated 3D printing, rapid prototyping, and CAD/CAM engineering services in Coimbatore. Founded by aerospace engineers. Get an instant quote today!">
+    <meta name="keywords" content="3D printing Coimbatore, rapid prototyping, CAD design, CAM programming, FDM, SLA, SLS, Zerovex Technologies, 3D printing India, engineering design">
+    <meta name="author" content="ZEROVEX Technologies">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" type="image/png" href="logo-2.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zerovex.in/">
+    <meta property="og:title" content="ZEROVEX Technologies | 3D Printing Experts">
+    <meta property="og:description" content="Advanced 3D printing and rapid prototyping services. Turn your ideas into reality.">
+    <meta property="og:image" content="logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; overflow-x: hidden; }
+        .glass-effect { background: rgba(255, 255, 255, 0.98); border-bottom: 1px solid #f3f4f6; }
+        
+        .nav-link { position: relative; color: #6b7280; padding-bottom: 4px; transition: color 0.3s ease; }
+        .nav-link:hover { color: #00c853; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px;
+            bottom: 0; left: 0; background-color: #00c853; transform-origin: bottom right; transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
+        /* Step Card CSS for Home/Services */
+        .step-card .step-number { transition: all 0.3s ease; opacity: 0.1; }
+        .step-card:hover .step-number { opacity: 0.8; color: #00c853; transform: translateY(-5px) scale(1.05); }
+
+        /* Service Image Zoom Effect */
+        .service-image-wrapper { position: relative; overflow: hidden; border-radius: 1rem; }
+        .service-image-wrapper img { transition: transform 0.5s ease; }
+        .service-image-wrapper:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="text-gray-800 relative">
+
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html"><img class="h-10 w-auto" src="logo.png" alt="ZEROVEX Logo"></a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="index.html" class="nav-link font-medium text-sm">Home</a>
+                    <a href="services.html" class="nav-link font-medium text-sm">Services</a>
+                    <a href="contact.html" class="nav-link font-medium text-sm">Contact</a>
+                    <a href="index.html#enquiry" class="nav-link font-medium text-sm">Client Enquiry</a>
+                    <a href="about.html" class="nav-link font-medium text-sm text-[#00c853]">About</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-5">
+                    <a href="quote.html" class="bg-[#00c853] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#059669] transition-colors flex items-center gap-2 text-sm shadow-md">
+                        <i class="fa-solid fa-cloud-arrow-up text-base"></i> Upload File - Get Instant Price
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-36 pb-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
+            <span class="text-[#00c853] font-semibold tracking-wider uppercase text-sm mb-2 block">Who We Are</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                About <span class="text-[#00c853]">ZEROVEX</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Founded by passionate aerospace engineers, we bridge the gap between imagination and reality by providing world-class 3D printing and engineering design solutions.
+            </p>
+        </div>
+    </div>
+
+    <div class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1170&auto=format&fit=crop" alt="Engineering Team" class="rounded-2xl shadow-xl w-full object-cover h-[450px]">
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Engineering Excellence, Delivered.</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    At ZEROVEX Technologies, based in Coimbatore, Tamil Nadu, we are driven by innovation and precision. What started as a vision among aerospace engineers has grown into a premier hub for rapid prototyping, additive manufacturing, and complex CAD/CAM programming.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    We understand that in the world of product development, time and accuracy are everything. Our expertise allows us to guide our clients through every step of the manufacturing process, ensuring that every product we deliver meets the highest industrial standards.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6 border-t border-gray-100 pt-8">
+                    <div>
+                        <h4 class="text-4xl font-black text-[#00c853] mb-2">100%</h4>
+                        <p class="text-sm font-semibold text-gray-700">Quality Assured</p>
+                    </div>
+                    <div>
+                        <h4 class="text-4xl font-black text-[#00c853] mb-2">24/7</h4>
+                        <p class="text-sm font-semibold text-gray-700">Engineering Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-24 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <div class="group bg-white p-10 rounded-2xl shadow-xl border-2 border-transparent hover:border-[#00c853] hover:shadow-2xl hover:scale-[1.03] transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-full bg-emerald-50 text-[#00c853] flex items-center justify-center mb-7 border-2 border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-bullseye text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#00c853] transition-colors">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        To empower creators, engineers, and businesses by providing accessible, high-quality, and rapid manufacturing solutions. We aim to turn complex engineering challenges into streamlined, workable realities.
+                    </p>
+                </div>
+
+                <div class="group bg-white p-10 rounded-2xl shadow-xl border-2 border-transparent hover:border-[#00c853] hover:shadow-2xl hover:scale-[1.03] transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 rounded-full bg-emerald-50 text-[#00c853] flex items-center justify-center mb-7 border-2 border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-eye text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#00c853] transition-colors">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        To become India's leading rapid prototyping and 3D printing partner, known for our aerospace-grade precision, technological advancement, and unwavering commitment to customer success.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900">Why Choose ZEROVEX?</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">We don't just print parts; we engineer solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-gray-50 text-[#00c853] flex items-center justify-center mb-5 border border-gray-100 shadow-sm">
+                        <i class="fa-solid fa-user-astronaut text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Aerospace Expertise</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Founded by aerospace engineers, our approach is rooted in extreme precision and analytical design.</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-gray-50 text-[#00c853] flex items-center justify-center mb-5 border border-gray-100 shadow-sm">
+                        <i class="fa-solid fa-microchip text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Advanced Tech</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">We utilize industrial-grade printers and the latest CAD/CAM software to deliver flawless results.</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-gray-50 text-[#00c853] flex items-center justify-center mb-5 border border-gray-100 shadow-sm">
+                        <i class="fa-solid fa-truck-fast text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fast Turnaround</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Time is money. Our optimized workflows ensure your prototypes are delivered faster than the competition.</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-gray-50 text-[#00c853] flex items-center justify-center mb-5 border border-gray-100 shadow-sm">
+                        <i class="fa-solid fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Transparent Pricing</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">No hidden fees. Our online quote system calculates costs purely based on material weight and volume.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#00c853] py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Build Together</h2>
+            <p class="text-emerald-50 mb-8">Ready to bring your innovative ideas to life? Get in touch with our engineering team today.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="quote.html" class="bg-white text-[#00c853] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                    Get an Instant Quote
+                </a>
+                <a href="contact.html" class="bg-transparent border border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#00c853] transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <img class="h-8 w-auto opacity-90" src="logo.png" alt="ZEROVEX Logo">
+            <div class="text-sm text-gray-500 font-medium">
+                &copy; 2026 ZEROVEX Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 50
+            });
+        });
+    </script>
+
+</body>
+</html>
