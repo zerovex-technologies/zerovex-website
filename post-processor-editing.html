@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post Processor Customization & Development | ZEROVEX Technologies</title>
+    <meta name="title" content="Post Processor Customization & Development | ZEROVEX Technologies">
+    <meta name="description" content="Fast, reliable CNC post processor editing and custom development for Fanuc, Siemens, Mitsubishi, Haas, Heidenhain controllers. Serving Coimbatore machine shops and manufacturers.">
+    <meta name="keywords" content="post processor editing, CNC post processor development, CAM post processor Coimbatore, Fanuc post processor, Siemens post processor, Mastercam post processor, Fusion 360 post processor, custom G-code generation">
+    <meta name="author" content="ZEROVEX Technologies">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/png" href="logo-2.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zerovex.in/post-processor-editing.html">
+    <meta property="og:title" content="Post Processor Customization & Development | ZEROVEX Technologies">
+    <meta property="og:description" content="Post processor edits and custom development for any CNC controller. Fast turnaround for machine shops in Coimbatore and beyond.">
+    <meta property="og:image" content="logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Post Processor Customization & Development",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "ZEROVEX Technologies",
+        "url": "https://zerovex.in/",
+        "telephone": "+91-82481-03727",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Coimbatore",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Coimbatore"
+      },
+      "description": "Custom CNC post processor editing and development for Fanuc, Siemens, Mitsubishi, Haas, and Heidenhain controllers, compatible with Mastercam, Fusion 360, SolidCAM, and NX CAM.",
+      "url": "https://zerovex.in/post-processor-editing.html"
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; overflow-x: hidden; }
+        .glass-effect { background: rgba(255, 255, 255, 0.98); border-bottom: 1px solid #f3f4f6; }
+
+        .nav-link { position: relative; color: #6b7280; padding-bottom: 4px; transition: color 0.3s ease; }
+        .nav-link:hover { color: #00c853; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px;
+            bottom: 0; left: 0; background-color: #00c853; transform-origin: bottom right; transition: transform 0.3s ease-out;
+        }
+        .nav-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
+        .service-image-wrapper { position: relative; overflow: hidden; border-radius: 1rem; }
+        .service-image-wrapper img { transition: transform 0.5s ease; }
+        .service-image-wrapper:hover img { transform: scale(1.05); }
+
+        .controller-card { transition: all 0.3s ease; }
+        .controller-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); }
+    </style>
+</head>
+<body class="text-gray-800 relative">
+
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html"><img class="h-10 w-auto" src="logo.png" alt="ZEROVEX Logo"></a>
+                </div>
+
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="index.html" class="nav-link font-medium text-sm">Home</a>
+                    <a href="services.html" class="nav-link font-medium text-sm text-[#00c853]">Services</a>
+                    <a href="contact.html" class="nav-link font-medium text-sm">Contact</a>
+                    <a href="index.html#enquiry" class="nav-link font-medium text-sm">Client Enquiry</a>
+                    <a href="about.html" class="nav-link font-medium text-sm">About</a>
+                </div>
+
+                <div class="hidden lg:flex items-center gap-5">
+                    <a href="quote.html" class="bg-[#00c853] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#059669] transition-colors flex items-center gap-2 text-sm shadow-md">
+                        <i class="fa-solid fa-cloud-arrow-up text-base"></i> Upload File - Get Instant Price
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="pt-36 pb-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
+            <span class="text-[#00c853] font-semibold tracking-wider uppercase text-sm mb-2 block">CAM Services</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                Post Processor <span class="text-[#00c853]">Customization & Development</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                New machine, new controller, or a CAM upgrade throwing errors on the shop floor? We edit and build post processors so your CAM-generated G-Code runs correctly, first time, on your exact machine.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                <a href="contact.html" class="bg-[#00c853] text-white px-8 py-3.5 rounded-full font-semibold hover:bg-[#059669] transition-all shadow-md text-sm">
+                    Send Us Your Post Processor Issue
+                </a>
+                <a href="#controllers" class="bg-white text-gray-900 border border-gray-200 px-8 py-3.5 rounded-full font-semibold hover:bg-gray-50 transition-all text-sm">
+                    See Supported Controllers
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why it matters -->
+    <div class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-6">
+                    <i class="fa-solid fa-code text-xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Post Processors Matter</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    A post processor translates your CAM toolpaths into the exact G-Code dialect your machine controller understands. When it's mismatched, wrong, or outdated, you get program crashes, wrong tool offsets, incorrect canned cycles, or scrapped parts. Most shops discover this the hard way, right when a new machine arrives or production is on the line.
+                </p>
+                <ul class="space-y-3 mb-8 text-sm text-gray-700">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Fix existing post processors throwing errors or wrong output.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Build new post processors from scratch for any CAM software.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-[#00c853]"></i> Adapt existing posts for a new machine or controller upgrade.</li>
+                </ul>
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-[#00c853] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#059669] transition-all shadow-md group text-sm">
+                    Talk to Our Engineers <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+            <div class="service-image-wrapper shadow-lg" data-aos="fade-left">
+                <img src="https://rs.jlccnc.com/static/image/blog/Knowledge-Hub/CNC-Machining-Fundamentals/CAM-toolpath-to-CNC-G-code-workflow.jpg" alt="CNC Post Processor Customization" class="w-full h-[400px] object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- Controllers / CAM software supported -->
+    <div id="controllers" class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center" data-aos="fade-up">
+                <span class="text-[#00c853] font-semibold tracking-wider uppercase text-xs mb-1 block">Compatibility</span>
+                <h2 class="text-3xl font-bold text-gray-900">Controllers & CAM Software We Work With</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-3">Don't see your exact controller? Ask us — we build custom posts for controllers not listed here too.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 mb-14">
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-microchip text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">Fanuc</p>
+                </div>
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="50">
+                    <i class="fa-solid fa-microchip text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">Siemens</p>
+                </div>
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-microchip text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">Mitsubishi</p>
+                </div>
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="150">
+                    <i class="fa-solid fa-microchip text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">Haas</p>
+                </div>
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-microchip text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">Heidenhain</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-laptop-code text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">Mastercam</p>
+                </div>
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="50">
+                    <i class="fa-solid fa-laptop-code text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">Fusion 360</p>
+                </div>
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-laptop-code text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">SolidCAM</p>
+                </div>
+                <div class="controller-card bg-gray-50 rounded-xl border border-gray-100 p-5 text-center" data-aos="fade-up" data-aos-delay="150">
+                    <i class="fa-solid fa-laptop-code text-[#00c853] text-2xl mb-3"></i>
+                    <p class="font-semibold text-sm text-gray-900">NX CAM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process -->
+    <div class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center" data-aos="fade-up">
+            <span class="text-[#00c853] font-semibold tracking-wider uppercase text-xs mb-1 block">How It Works</span>
+            <h2 class="text-3xl font-bold text-gray-900">From Problem to Working Post, Fast</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="step-card text-center p-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="w-14 h-14 mx-auto rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-5">
+                    <i class="fa-solid fa-file-arrow-up text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-gray-900">1. Send Details</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Share your machine, controller, CAM software, and the current post processor or error you're facing.</p>
+            </div>
+            <div class="step-card text-center p-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-14 h-14 mx-auto rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-5">
+                    <i class="fa-solid fa-clock text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-gray-900">2. Quick Turnaround Quote</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">We assess the fix or build needed and give you a clear timeline — most edits are turned around fast.</p>
+            </div>
+            <div class="step-card text-center p-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-14 h-14 mx-auto rounded-xl bg-emerald-50 text-[#00c853] flex items-center justify-center border border-emerald-100 shadow-sm mb-5">
+                    <i class="fa-solid fa-circle-check text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-gray-900">3. Tested & Delivered</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">We verify the output G-Code logic before handing it over, so it runs clean on your machine.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-[#00c853] py-16 mt-10">
+        <div class="max-w-4xl mx-auto px-4 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold text-white mb-4">Post processor giving you trouble?</h2>
+            <p class="text-emerald-50 mb-8">Tell us your machine, controller, and CAM software — we'll get your post processor working correctly.</p>
+            <div class="flex justify-center gap-4">
+                <a href="contact.html" class="bg-white text-[#00c853] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                    Contact Us
+                </a>
+                <a href="services.html" class="bg-transparent border border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#00c853] transition-colors">
+                    View All Services
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <img class="h-8 w-auto opacity-90" src="logo.png" alt="ZEROVEX Logo">
+            <div class="text-sm text-gray-500 font-medium">
+                &copy; 2026 ZEROVEX Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 50
+            });
+        });
+    </script>
+
+</body>
+</html>
