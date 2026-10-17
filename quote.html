@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>ZEROVEX Technologies</title>
-    <meta name="title" content="ZEROVEX Technologies | 3D Printing & Engineering Services">
-    <meta name="description" content="3D printing, CAD design, CAM programming, and post processor customization services in Coimbatore. Founded by aerospace engineers. Get an instant quote today!">
-    <meta name="keywords" content="3D printing Coimbatore, CAD design, CAM programming, post processor customization, FDM, SLA, SLS, Zerovex Technologies, 3D printing India, engineering design">
+    <title>Instant 3D Printing Quote | Upload STL | ZEROVEX Coimbatore</title>
+    <meta name="description" content="Upload your STL file and get an instant 3D printing price from ZEROVEX in Coimbatore. FDM printing priced by material weight.">
+    <meta name="keywords" content="instant 3D printing quote, STL upload quote, 3D printing price Coimbatore">
+    <link rel="canonical" href="https://zerovex.in/quote.html">
+    <meta property="og:url" content="https://zerovex.in/quote.html">
+    <meta property="og:title" content="Instant 3D Printing Quote | Upload STL | ZEROVEX Coimbatore">
+    <meta property="og:description" content="Upload your STL file and get an instant 3D printing price from ZEROVEX in Coimbatore. FDM printing priced by material weight.">
     <meta name="author" content="ZEROVEX Technologies">
     <meta name="robots" content="index, follow">
     
     <link rel="icon" type="image/png" href="logo-2.png">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zerovex.in/">
-    <meta property="og:title" content="ZEROVEX Technologies | 3D Printing Experts">
-    <meta property="og:description" content="Advanced 3D printing, CAM programming, and post processor customization services. Turn your ideas into reality.">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:image" content="https://zerovex.in/logo.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -48,27 +48,43 @@
 </head>
 <body class="text-gray-800">
 
-    <nav class="fixed w-full z-50 glass-effect transition-all duration-300">
+                                <nav class="fixed w-full z-50 glass-effect transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="index.html"><img class="h-10 w-auto" src="logo.png" alt="ZEROVEX Logo"></a>
                 </div>
-                
                 <div class="hidden lg:flex space-x-6 items-center">
                     <a href="index.html" class="nav-link font-medium text-sm">Home</a>
-                    <a href="index.html#services" class="nav-link font-medium text-sm">Services</a>
-                    <a href="index.html#about" class="nav-link font-medium text-sm">About</a>
+                    <a href="services.html" class="nav-link font-medium text-sm">Services</a>
+                    <a href="blog.html" class="nav-link font-medium text-sm">Blog</a>
+                    <a href="about.html" class="nav-link font-medium text-sm">About</a>
+                    <a href="contact.html" class="nav-link font-medium text-sm">Contact</a>
+                    <a href="index.html#enquiry" class="nav-link font-medium text-sm">Client Enquiry</a>
                 </div>
-
-                <div class="hidden lg:flex items-center gap-5">
-                    <a href="index.html" class="text-gray-500 hover:text-[#00c853] transition-colors text-sm font-semibold flex items-center gap-2">
-                        <i class="fa-solid fa-arrow-left"></i> Back to Home
-                    </a>
-                    <a href="contact.html" class="bg-[#00c853] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#059669] transition-colors flex items-center gap-2 text-sm shadow-md">
-                        <i class="fa-solid fa-headset text-base"></i> Contact Us
+                <div class="hidden lg:flex items-center">
+                    <a href="quote.html" class="bg-[#00c853] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#059669] transition-colors flex items-center gap-2 text-sm shadow-md">
+                        <i class="fa-solid fa-cloud-arrow-up text-base"></i> Upload File - Get Instant Price
                     </a>
                 </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu" class="text-gray-800 hover:text-[#00c853] focus:outline-none p-2 transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl">
+            <div class="px-4 pt-2 pb-6 space-y-1 flex flex-col">
+                <a href="index.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Home</a>
+                <a href="services.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Services</a>
+                <a href="blog.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Blog</a>
+                <a href="about.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">About</a>
+                <a href="contact.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Contact</a>
+                <a href="index.html#enquiry" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Client Enquiry</a>
+                <a href="quote.html" class="mt-4 w-full bg-[#00c853] text-white px-5 py-3.5 rounded-lg font-bold text-center hover:bg-[#059669] transition-colors shadow-md flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-cloud-arrow-up text-lg"></i> Upload File &amp; Get Price
+                </a>
             </div>
         </div>
     </nav>
@@ -90,7 +106,7 @@
                     <h2 class="text-lg font-bold text-gray-900 mb-5 border-b border-gray-100 pb-3">1. Upload 3D Model</h2>
                     
                     <div class="upload-zone rounded-xl p-8 text-center cursor-pointer bg-gray-50 relative border-2 border-dashed border-[#00c853] hover:bg-emerald-50 transition-colors" id="drop-zone">
-                        <input type="file" id="file-upload" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" accept=".stl,.step,.iges">
+                        <input type="file" id="file-upload" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" accept=".stl,.step,.iges" aria-describedby="upload-status">
                         <div class="flex flex-col items-center pointer-events-none">
                             <i class="fa-solid fa-cube text-4xl text-[#00c853] mb-3" id="upload-icon"></i>
                             <span class="text-sm font-bold text-gray-700" id="file-name-display">Click to upload or drag & drop</span>
@@ -111,8 +127,8 @@
                     <form id="quote-form" class="space-y-5">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Material Selection</label>
-                                <select id="material-select" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white cursor-pointer" required>
+                                <label for="material-select" class="block text-sm font-medium text-gray-700 mb-1.5">Material Selection</label>
+                                <select id="material-select" name="material" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white cursor-pointer" required>
                                     <option value="PLA" data-density="1.24">PLA (Standard & Strong)</option>
                                     <option value="ABS" data-density="1.04">ABS (Impact Resistant)</option>
                                     <option value="PETG" data-density="1.27">PETG (Durable & Flexible)</option>
@@ -120,24 +136,25 @@
                                 </select>
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Email ID</label>
-                                <input type="email" id="customer-email" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="yourname@email.com" required>
+                                <label for="customer-email" class="block text-sm font-medium text-gray-700 mb-1.5">Email ID</label>
+                                <input type="email" id="customer-email" name="email" autocomplete="email" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="yourname@email.com" required>
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Your Name</label>
-                                <input type="text" id="customer-name" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="John Doe" required>
+                                <label for="customer-name" class="block text-sm font-medium text-gray-700 mb-1.5">Your Name</label>
+                                <input type="text" id="customer-name" name="name" autocomplete="name" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="John Doe" required>
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Mobile Number</label>
-                                <input type="tel" id="customer-mobile" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="+91 98765 43210" required>
+                                <label for="customer-mobile" class="block text-sm font-medium text-gray-700 mb-1.5">Mobile Number</label>
+                                <input type="tel" id="customer-mobile" name="mobile" autocomplete="tel" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm bg-gray-50 focus:bg-white" placeholder="+91 98765 43210" required>
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1.5">Additional Requirements (Optional)</label>
-                            <textarea id="customer-req" rows="2" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm resize-none bg-gray-50 focus:bg-white" placeholder="Specific color, infill percentage (default 20%), layer height, etc."></textarea>
+                            <label for="customer-req" class="block text-sm font-medium text-gray-700 mb-1.5">Additional Requirements (Optional)</label>
+                            <textarea id="customer-req" name="requirements" rows="2" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-[#00c853] focus:ring-1 focus:ring-[#00c853] outline-none transition-all text-sm resize-none bg-gray-50 focus:bg-white" placeholder="Specific color, infill percentage (default 20%), layer height, etc."></textarea>
                         </div>
                     </form>
+                    <p class="mt-4 text-center text-xs text-gray-500">By submitting a quote request, you agree to our <a href="privacy.html" class="text-[#00c853] hover:underline">Privacy Policy</a>.</p>
                 </div>
 
             </div>
@@ -168,13 +185,13 @@
                         </p>
                     </div>
 
-                    <button id="submit-btn" class="w-full bg-[#00c853] text-white font-bold py-3.5 rounded-lg hover:bg-[#059669] transition-all duration-300 shadow-md text-sm flex items-center justify-center gap-2 group disabled:bg-gray-400 disabled:cursor-not-allowed">
+                    <button id="submit-btn" form="quote-form" type="submit" class="w-full bg-[#00c853] text-white font-bold py-3.5 rounded-lg hover:bg-[#059669] transition-all duration-300 shadow-md text-sm flex items-center justify-center gap-2 group disabled:bg-gray-400 disabled:cursor-not-allowed">
                         <span id="btn-text">Submit Order</span> 
                         <i id="btn-icon" class="fa-solid fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
                         <div id="btn-spinner" class="spinner hidden"></div>
                     </button>
 
-                    <div id="form-message" class="hidden mt-4 text-center text-sm font-semibold rounded-lg py-2 px-3">
+                    <div id="form-message" class="hidden mt-4 text-center text-sm font-semibold rounded-lg py-2 px-3" role="status" aria-live="polite">
                     </div>
                     
                 </div>
@@ -183,11 +200,31 @@
         </div>
     </div>
 
-    <a href="https://wa.me/918248103727" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-300 z-50">
+    <a href="https://wa.me/918248103727" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-[0_4px_15px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-300 z-50">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <footer class="bg-white border-t border-gray-200 py-6 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 mb-6 border-b border-gray-100">
+            <p class="text-xs font-bold text-gray-900 uppercase tracking-wider mb-3">Our services in Coimbatore</p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2">
+                <a href="cam-programming.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">CNC & CAM Programming</a>
+                <a href="vmc-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">VMC Programming</a>
+                <a href="hmc-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">HMC Programming</a>
+                <a href="3-axis-cam-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">3-Axis CAM Programming</a>
+                <a href="4-axis-cam-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">4-Axis CAM Programming</a>
+                <a href="5-axis-cam-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">5-Axis Simultaneous Programming</a>
+                <a href="post-processor-editing.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">Post Processor Customization</a>
+                <a href="cad-design.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">Engineering CAD Design</a>
+                <a href="3d-printing.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">3D Printing</a>
+            </div>
+            <div class="flex items-center gap-3 mt-5">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Follow us</span>
+                <a href="https://www.linkedin.com/company/zerovex-technologies/" target="_blank" rel="noopener" aria-label="ZEROVEX on LinkedIn" class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-[#00c853] hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/zerovex_technologies" target="_blank" rel="noopener" aria-label="ZEROVEX on Instagram" class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-[#00c853] hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/Zerovex_Tech" target="_blank" rel="noopener" aria-label="ZEROVEX on X" class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-[#00c853] hover:text-white transition-colors"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            </div>
+        </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <img class="h-6 w-auto opacity-70" src="logo.png" alt="ZEROVEX Logo">
             <div class="text-xs text-gray-500 font-medium">
@@ -208,8 +245,10 @@
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwV7FhHycIMwTP5pH407T0d2UiET8pswpwqNfXZ2m92OzgiNoaDEWM0ES6JXS3HiFVBzQ/exec';
 
         // Constants
-        const RATE_PER_GRAM = 15; 
+        const RATE_PER_GRAM = 15;
         const INFILL_FACTOR = 0.35; 
+        const MAX_FILE_BYTES = 50 * 1024 * 1024;
+        const ALLOWED_EXTENSIONS = new Set(['stl', 'step', 'iges']);
 
         // Global variables
         window.currentVolumeCM3 = 0;
@@ -228,6 +267,7 @@
         const totalPriceDisplay = document.getElementById('total-price');
         const priceDisclaimer = document.getElementById('price-disclaimer');
         
+        const quoteForm = document.getElementById('quote-form');
         const submitBtn = document.getElementById('submit-btn');
         const btnText = document.getElementById('btn-text');
         const btnIcon = document.getElementById('btn-icon');
@@ -249,6 +289,14 @@
 
             const fileName = file.name.toLowerCase();
             const extension = fileName.split('.').pop();
+            if (!ALLOWED_EXTENSIONS.has(extension)) {
+                resetSelectedFile('Unsupported file format. Please choose an STL, STEP, or IGES file.');
+                return;
+            }
+            if (file.size > MAX_FILE_BYTES) {
+                resetSelectedFile('File is too large. The maximum upload size is 50MB.');
+                return;
+            }
             window.currentFileType = extension;
             window.fileNameData = file.name;
             window.fileMimeType = file.type || 'application/octet-stream';
@@ -346,9 +394,23 @@
             totalPriceDisplay.innerText = '₹' + Math.ceil(total).toLocaleString('en-IN');
         }
 
+        function resetSelectedFile(message) {
+            fileUpload.value = '';
+            window.currentFileType = '';
+            window.fileBase64 = null;
+            window.fileNameData = null;
+            window.fileMimeType = null;
+            fileNameDisplay.innerText = 'Click to upload or drag & drop';
+            fileNameDisplay.classList.remove('text-[#00c853]');
+            uploadStatus.innerText = message;
+            uploadStatus.className = 'text-xs font-semibold text-red-500 mt-3 bg-red-50 px-3 py-1 rounded-full border border-red-200';
+        }
+
         // --- SUBMIT FORM TO GOOGLE SCRIPT ---
-        submitBtn.addEventListener('click', function(e) {
+        quoteForm.addEventListener('submit', function(e) {
             e.preventDefault();
+
+            if (!quoteForm.reportValidity()) return;
 
             // Validate form
             const name = document.getElementById('customer-name').value;
@@ -391,7 +453,7 @@
             // Send POST request
             fetch(SCRIPT_URL, {
                 method: 'POST',
-                mode: 'no-cors', // Important for Google Scripts
+                mode: 'no-cors',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -400,10 +462,10 @@
             .then(() => {
                 // Success
                 submitBtn.disabled = false;
-                btnText.innerText = "Order Submitted!";
+                btnText.innerText = "Request Sent";
                 btnSpinner.classList.add('hidden');
                 
-                showMessage("Success! Your order has been submitted. We will contact you soon.", "success");
+                showMessage("Your request was sent for processing. We will confirm it by email or phone.", "success");
                 
                 // Reset form
                 document.getElementById('quote-form').reset();
@@ -435,6 +497,9 @@
                 formMessage.classList.add('bg-emerald-100', 'text-emerald-700');
             }
         }
+    </script>
+    <script>
+        (function(){var b=document.getElementById('mobile-menu-btn'),m=document.getElementById('mobile-menu');if(b&&m){b.addEventListener('click',function(){m.classList.toggle('hidden');});}})();
     </script>
 </body>
 </html>

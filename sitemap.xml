@@ -2,32 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://zerovex.in/</loc>
-      <lastmod>2026-08-21</lastmod>
+      <lastmod>2026-10-14</lastmod>
       <priority>1.00</priority>
    </url>
    <url>
-      <loc>https://zerovex.in/services.html</loc>
-      <lastmod>2026-08-21</lastmod>
+      <loc>https://zerovex.in/cam-programming.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.95</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/vmc-programming-coimbatore.html</loc>
+      <lastmod>2026-10-14</lastmod>
       <priority>0.90</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/hmc-programming-coimbatore.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.90</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/5-axis-cam-programming-coimbatore.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.90</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/4-axis-cam-programming-coimbatore.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.85</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/3-axis-cam-programming-coimbatore.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.85</priority>
    </url>
    <url>
       <loc>https://zerovex.in/post-processor-editing.html</loc>
-      <lastmod>2026-08-21</lastmod>
+      <lastmod>2026-10-14</lastmod>
       <priority>0.90</priority>
    </url>
    <url>
-      <loc>https://zerovex.in/about.html</loc>
-      <lastmod>2026-08-21</lastmod>
-      <priority>0.70</priority>
+      <loc>https://zerovex.in/cad-design.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.80</priority>
    </url>
    <url>
-      <loc>https://zerovex.in/contact.html</loc>
-      <lastmod>2026-08-21</lastmod>
-      <priority>0.70</priority>
+      <loc>https://zerovex.in/3d-printing.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/services.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.80</priority>
    </url>
    <url>
       <loc>https://zerovex.in/quote.html</loc>
-      <lastmod>2026-08-21</lastmod>
-      <priority>0.80</priority>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.70</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/blog.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.60</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/3-axis-vs-4-axis-vs-5-axis-cnc-programming.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.60</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/about.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.50</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/contact.html</loc>
+      <lastmod>2026-10-14</lastmod>
+      <priority>0.60</priority>
+   </url>
+   <url>
+      <loc>https://zerovex.in/privacy.html</loc>
+      <lastmod>2026-10-17</lastmod>
+      <priority>0.30</priority>
    </url>
 </urlset>

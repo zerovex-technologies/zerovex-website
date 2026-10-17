@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog: CNC Programming, CAM &amp; Post Processor Guides | ZEROVEX</title>
+    <meta name="description" content="Practical guides on CNC programming, CAM, VMC and HMC machining, 5-axis work and post processors, from ZEROVEX in Coimbatore.">
+    <meta name="keywords" content="CNC programming blog, CAM programming guide, 5 axis vs 3 axis, post processor guide, VMC HMC programming">
+    <meta name="author" content="ZEROVEX Technologies">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zerovex.in/blog.html">
+
+    <link rel="icon" type="image/png" href="logo-2.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zerovex.in/blog.html">
+    <meta property="og:title" content="Blog: CNC Programming, CAM &amp; Post Processor Guides | ZEROVEX">
+    <meta property="og:description" content="Practical guides on CNC programming, CAM, VMC and HMC machining, 5-axis work and post processors, from ZEROVEX in Coimbatore.">
+    <meta property="og:image" content="https://zerovex.in/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; overflow-x: hidden; }
+        .glass-effect { background: rgba(255, 255, 255, 0.98); border-bottom: 1px solid #f3f4f6; }
+        .nav-link { position: relative; color: #6b7280; padding-bottom: 4px; transition: color 0.3s ease; }
+        .nav-link:hover { color: #00c853; }
+        .nav-link::after { content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px; bottom: 0; left: 0; background-color: #00c853; transform-origin: bottom right; transition: transform 0.3s ease-out; }
+        .nav-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+        .service-image-wrapper { position: relative; overflow: hidden; border-radius: 1rem; }
+        .service-image-wrapper img { transition: transform 0.5s ease; }
+        .service-image-wrapper:hover img { transform: scale(1.05); }
+        .info-card { transition: all 0.3s ease; }
+        .info-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); }
+        details summary { cursor: pointer; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details[open] .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform 0.2s ease; }
+    </style>
+</head>
+<body class="text-gray-800 relative">
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html"><img class="h-10 w-auto" src="logo.png" alt="ZEROVEX Logo"></a>
+                </div>
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="index.html" class="nav-link font-medium text-sm">Home</a>
+                    <a href="services.html" class="nav-link font-medium text-sm">Services</a>
+                    <a href="blog.html" class="nav-link font-medium text-sm text-[#00c853]">Blog</a>
+                    <a href="about.html" class="nav-link font-medium text-sm">About</a>
+                    <a href="contact.html" class="nav-link font-medium text-sm">Contact</a>
+                    <a href="index.html#enquiry" class="nav-link font-medium text-sm">Client Enquiry</a>
+                </div>
+                <div class="hidden lg:flex items-center">
+                    <a href="quote.html" class="bg-[#00c853] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#059669] transition-colors flex items-center gap-2 text-sm shadow-md">
+                        <i class="fa-solid fa-cloud-arrow-up text-base"></i> Upload File - Get Instant Price
+                    </a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu" class="text-gray-800 hover:text-[#00c853] focus:outline-none p-2 transition-colors">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl">
+            <div class="px-4 pt-2 pb-6 space-y-1 flex flex-col">
+                <a href="index.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Home</a>
+                <a href="services.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Services</a>
+                <a href="blog.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Blog</a>
+                <a href="about.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">About</a>
+                <a href="contact.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Contact</a>
+                <a href="index.html#enquiry" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#00c853] border-b border-gray-50 transition-colors">Client Enquiry</a>
+                <a href="quote.html" class="mt-4 w-full bg-[#00c853] text-white px-5 py-3.5 rounded-lg font-bold text-center hover:bg-[#059669] transition-colors shadow-md flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-cloud-arrow-up text-lg"></i> Upload File &amp; Get Price
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="pt-36 pb-12 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
+            <span class="text-[#00c853] font-semibold tracking-wider uppercase text-sm mb-2 block">ZEROVEX Blog</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">CNC Programming, CAM &amp; Post Processor Guides</h1>
+            <p class="text-lg text-gray-600 leading-relaxed">Practical notes for machine shops and manufacturers.</p>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 gap-6">
+            <a href="3-axis-vs-4-axis-vs-5-axis-cnc-programming.html" class="block bg-white rounded-xl border border-gray-100 p-6 hover:shadow-lg transition duration-300" data-aos="fade-up">
+                <span class="text-xs font-semibold text-[#00c853] uppercase tracking-wider">CAM Programming</span>
+                <h2 class="text-xl font-bold text-gray-900 mt-2 mb-2">3-Axis vs 4-Axis vs 5-Axis CNC Programming: Which to Choose?</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">What each axis configuration can do, where it stops, and how to choose for your part and machine.</p>
+                <span class="inline-block mt-4 text-[#00c853] text-sm font-semibold">Read article &rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-gray-200 pt-8 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6 mb-6 border-b border-gray-100">
+            <p class="text-xs font-bold text-gray-900 uppercase tracking-wider mb-3">Our services in Coimbatore</p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2">
+                    <a href="cam-programming.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">CNC & CAM Programming</a>
+                    <a href="vmc-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">VMC Programming</a>
+                    <a href="hmc-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">HMC Programming</a>
+                    <a href="3-axis-cam-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">3-Axis CAM Programming</a>
+                    <a href="4-axis-cam-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">4-Axis CAM Programming</a>
+                    <a href="5-axis-cam-programming-coimbatore.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">5-Axis Simultaneous Programming</a>
+                    <a href="post-processor-editing.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">Post Processor Customization</a>
+                    <a href="cad-design.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">Engineering CAD Design</a>
+                    <a href="3d-printing.html" class="text-sm text-gray-500 hover:text-[#00c853] transition-colors">3D Printing</a>
+            </div>
+            <div class="flex items-center gap-3 mt-5">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Follow us</span>
+                <a href="https://www.linkedin.com/company/zerovex-technologies/" target="_blank" rel="noopener" aria-label="ZEROVEX on LinkedIn" class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-[#00c853] hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/zerovex_technologies" target="_blank" rel="noopener" aria-label="ZEROVEX on Instagram" class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-[#00c853] hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/Zerovex_Tech" target="_blank" rel="noopener" aria-label="ZEROVEX on X" class="w-9 h-9 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center hover:bg-[#00c853] hover:text-white transition-colors"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <img class="h-8 w-auto opacity-90" src="logo.png" alt="ZEROVEX Logo">
+            <div class="text-sm text-gray-500 font-medium">
+                &copy; 2026 ZEROVEX Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
+            var b = document.getElementById('mobile-menu-btn'), m = document.getElementById('mobile-menu');
+            if (b && m) { b.addEventListener('click', function() { m.classList.toggle('hidden'); }); }
+        });
+    </script>
+
+</body>
+</html>
